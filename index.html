@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tsavo WoningScan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box} html,body{margin:0;padding:0;background:#F4F1ED} body{font-family:'Inter',Arial,sans-serif;color:#273338}
+.page{min-height:100vh;background:#F4F1ED;padding:44px 72px 104px}
+.card{max-width:1296px;margin:0 auto;background:#fff;border-radius:42px;padding:60px;display:grid;grid-template-columns:1.05fr 1px .95fr;gap:58px;min-height:876px}
+.divider{background:#EEF1F2;width:1px}.pill{display:inline-flex;align-items:center;background:#E8F7FA;color:#00ABC2;border-radius:999px;padding:11px 28px;font-weight:700;font-size:16px}
+h1{font-family:'Zilla Slab',Georgia,serif;font-size:56px;line-height:1.14;margin:60px 0 36px;font-weight:700;letter-spacing:-.02em}h1 .accent{color:#00ABC2}
+.lead{font-size:18px;line-height:30px;color:#53636C;max-width:600px;margin:0 0 64px}.insight-title{font-size:22px;font-weight:700;margin-bottom:30px}
+.list{display:grid;gap:22px;margin-bottom:48px}.item{display:flex;align-items:center;gap:14px;font-size:18px}.check{width:32px;height:32px;border-radius:50%;background:#EAF7F0;color:#049B4E;display:grid;place-items:center;font-weight:700;flex:0 0 32px}
+.how{background:#F5FBFC;border-radius:18px;padding:28px 32px;max-width:570px}.how strong{display:block;color:#00ABC2;font-size:15px;margin-bottom:12px}.how span{font-size:16px}
+.right{padding-top:58px}h2{font-family:'Zilla Slab',Georgia,serif;font-size:38px;line-height:1.2;margin:0 0 46px}
+label{display:block;font-weight:700;font-size:16px;margin-bottom:12px}input[type=text]{width:100%;height:74px;border:2px solid #D7E0E4;border-radius:18px;padding:0 24px;font:400 18px 'Inter',Arial,sans-serif;color:#273338;outline:none;background:#fff}input[type=text]::placeholder{color:#9AA7AE}input[type=text]:focus{border-color:#00ABC2}
+.row{display:grid;grid-template-columns:1fr 1.05fr;gap:28px;margin-top:48px}.helper{font-size:15px;line-height:24px;color:#667784;margin:44px 0 34px}
+.accept{display:flex;align-items:center;gap:14px;font-size:15px;margin-bottom:35px}.accept input{appearance:none;width:28px;height:28px;border:2px solid #8D9AA1;border-radius:6px;margin:0;position:relative;background:#fff}.accept input:checked{background:#00ABC2;border-color:#00ABC2}.accept input:checked:after{content:'✓';position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-weight:700}.accept a{color:#00ABC2;font-weight:700;text-decoration:none}.accept .req{color:#ED6B46}
+button{width:100%;height:82px;border:0;border-radius:20px;background:#ED6B46;color:#fff;font:700 19px 'Inter',Arial,sans-serif;cursor:pointer}
+.footer{background:#273338;border-top:7px solid #00ABC2;color:#fff;text-align:center;padding:23px 20px 15px}.footer .brand{font-size:15px;font-weight:700;margin-bottom:14px}.footer .links{font-size:12px;color:#D9E0E3}
+@media(max-width:900px){.page{padding:20px 14px 70px}.card{grid-template-columns:1fr;gap:38px;padding:28px 24px;border-radius:28px;min-height:auto}.divider{display:none}.right{padding-top:0}h1{font-size:40px;margin:34px 0 26px}.lead{margin-bottom:40px}.row{grid-template-columns:1fr 1fr;gap:16px;margin-top:34px}}
+</style>
+</head>
+<body>
+<div class="page"><main class="card">
+<section class="left">
+<div class="pill">Gratis WoningScan · ± 2 minuten</div>
+<h1>Maak je woning<br><span class="accent">meer waard</span></h1>
+<p class="lead">Beantwoord een paar korte vragen en krijg inzicht in welke verbeteringen bij jouw woning passen en mogelijk kunnen bijdragen aan de woningwaarde.</p>
+<div class="insight-title">Na de WoningScan krijg je inzicht in:</div>
+<div class="list">
+<div class="item"><span class="check">✓</span><span>relevante verbeteringen voor jouw woning</span></div>
+<div class="item"><span class="check">✓</span><span>mogelijke kansen voor je woningwaarde</span></div>
+<div class="item"><span class="check">✓</span><span>welke stappen je als eerste kunt overwegen</span></div>
+</div>
+<div class="how"><strong>ZO WERKT HET</strong><span>Adres invullen → korte vragen → persoonlijk rapport</span></div>
+</section>
+<div class="divider"></div>
+<section class="right">
+<h2>Start met je woning</h2>
+<div><label for="postcode">Postcode *</label><input id="postcode" type="text" placeholder="1234 AB"></div>
+<div class="row"><div><label for="huisnummer">Huisnummer *</label><input id="huisnummer" type="text" placeholder="123"></div><div><label for="toevoeging">Toevoeging</label><input id="toevoeging" type="text" placeholder="A"></div></div>
+<p class="helper">We gebruiken je adres om openbare woninggegevens op te halen en de scan af te stemmen op jouw woning.</p>
+<label class="accept"><input type="checkbox"><span>Ik accepteer de <a href="#">algemene voorwaarden</a><span class="req">*</span></span></label>
+<button type="button">Start de gratis WoningScan</button>
+</section>
+</main></div>
+<footer class="footer"><div class="brand">Tsavo B.V.</div><div class="links">Algemene voorwaarden · Privacy · Cookies · Contact</div></footer>
+</body>
+</html>
